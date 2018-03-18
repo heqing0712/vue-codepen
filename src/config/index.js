@@ -2,8 +2,8 @@
 var config = {};
 var storeToken = "vs-";
 
-//config.staticPath = "./static/";
-config.staticPath = "./vue-codepen/dist/static/";
+config.staticPath = "./static/";
+//config.staticPath = "./vue-codepen/dist/static/";
 
 config.storeToken = storeToken;
 
