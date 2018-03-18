@@ -1,0 +1,332 @@
+﻿/*dialog-add*/
+.dialog-add {
+ 
+}
+.dialog-add .c-all {
+  margin-bottom:10px;
+}
+
+.dialog-add .c-tip{
+    color:#999;font-weight:normal
+}
+.dialog-add h3 {
+    margin-bottom:10px;
+    font-size:16px;
+    color:#333
+}
+
+.dialog-add .c-list {
+    min-height:40px;
+    margin-left:-15px
+}
+.dialog-add .c-list li {
+    display:inline-block;
+    margin:0px 0px 10px 15px;
+    position:relative;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+    border-radius:3px;
+    display: inline-block;
+    cursor:pointer;
+}
+
+.dialog-add .tag {
+    background: #eceff5;
+    display: inline-block;
+    color: #a1a8af;
+    padding: 0 30px;
+    border-radius:3px;
+}
+
+.dialog-add li:hover .tag{
+  background:#4A8DFC;
+    color:#fff
+}
+
+.dialog-add .tag.active {
+    background:#4A8DFC!important;
+    color:#fff;
+}
+
+.dialog-add .tag-delete {
+    width:16px;
+    height:16px;
+    line-height:16px;
+    position:absolute;
+    top:-7px;
+    right:-7px;
+    color:#666;
+    background: #eceff5;
+    border-radius:12px;
+    text-align:center;
+    text-decoration:none;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.13);
+}
+
+.dialog-add li:hover .tag-delete,.dialog-add .tag-delete.active{
+    background:#83CC2B;
+    color:#fff;
+ 
+}
+
+.dialog-add .c-ipt {
+    margin-bottom:10px;
+}
+
+.dialog-add .c-ipt input {
+    border: 1px solid #ddd!important;
+    height: 30px;
+    line-height: 30px;
+    padding:0px 4px;
+    background:#fff!important;
+    display:inline-block;
+    width:200px!important;
+}
+.dialog-add .c-ipt input:focus {
+    border-color:#aaa!important;
+}
+.dialog-add .c-ipt button {
+
+    height: 30px;
+    line-height: 28px;
+    margin: 10px 10px;
+    padding: 0 30px;
+    border-radius: 2px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #4A8DFC;
+    background:#4A8DFC;
+    color: #fff;
+    outline:none;
+    vertical-align:-1px;
+}
+.dialog-add .c-ipt button:hover {
+    background: #4b87ea;
+}
+
+
+/*dialog-settings*/
+.dialog-settings .ui_main {
+    vertical-align:top;
+}
+.pen-settings {
+   width:100%;
+   font-size:14px;
+   color:#000;
+   margin:0 auto;
+   text-align:left;
+}
+
+.pen-settings .title {
+    font-size:24px;
+    line-height:1.8;
+    border-bottom:3px solid #ccc;
+}
+
+.pen-settings .tab-menus {
+   width:100%;
+       margin-bottom:10px;
+}
+.pen-settings .tab-menus a {
+
+    line-height:32px;
+    font-size:16px;
+    display:inline-block;
+    margin:0px 20px 0px 0px;
+    cursor:pointer;
+    color:#999;
+    text-decoration:none;
+
+}
+.pen-settings .tab-menus a:hover,
+.pen-settings .tab-menus a.active {
+    color:#000;
+}
+.pen-settings .tab-menus a.active {
+    font-weight:600;
+  
+}
+.pen-settings .tab-ct {
+    display:none;
+}
+
+.pen-settings .tab-ct.active {
+    display:block;
+}
+
+.pen-settings .form-item {
+    margin-bottom:10px;
+}
+
+.pen-settings .form-tit {
+    font-size:16px;
+    margin-bottom:5px;
+}
+.pen-settings select {
+    width:100%;
+    padding:4px 8px;
+    font-size:14px;
+    border: 3px solid #ccc;
+}
+.pen-settings input[type="text"],.pen-settings  textarea {
+    background: #f3f0eb ;
+    color: #222;
+    font-size: 13px;
+    -webkit-appearance: none;
+    padding: 8px;
+    outline: 0;
+    border: 3px solid #ccc;
+    transition: border-color 0.2s;
+    width:100%;
+}
+
+.pen-settings input[type="text"]:focus,
+.pen-settings  textarea:focus,
+.pen-settings select:focus{
+    border-color: #555;
+    outline:none;
+}
+.pen-settings textarea {
+    height:100px;
+    overflow:auto;
+    overflow-y:auto;
+}
+.quick-select {
+    padding:5px 0px;
+}
+.quick-select a,
+.quick-select a:link{
+    color:#666;
+    text-decoration:none;
+}
+.quick-select a:hover {
+    color:#0063ff;
+    text-decoration:underline;
+   
+}
+
+/*
+ setting-box
+*/
+.setting-box {
+    position:absolute;
+    z-index:1000;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    width:350px;
+    height:100%;
+    background:#fff;
+    border-left: 1px solid #CFD8DC!important;
+    box-shadow:0px 3px 12px rgba(0,0,0,0.12);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    right:-360px;
+    padding:0px 0px 0px 20px;
+
+}
+.setting-box.show {
+    right:0px;
+}
+.setting-box .hd {
+    height:54px;
+    line-height:54px;
+    color:#fff;
+    border-bottom:1px solid #ecedef
+}
+.setting-box .hd h2 {
+    color:#333;
+    font-size:18px;
+   font-weight:400;
+}
+
+.setting-box .hd .off {
+    position:absolute;
+    top:0px;
+    right:0px;
+    line-height:50px;
+    color:#333;
+    padding:0px 15px;
+    text-decoration:none;
+    font-size:16px;
+}
+
+.setting-box .bd {
+    padding:0px 0px;
+}
+
+.set-box {
+     padding:15px 0px 30px 0px;
+     margin-right:20px;
+     margin-bottom:0px;
+          /*border-bottom:1px solid #eee;*/
+}
+
+.set-box h3 {
+    font-size:16px;
+    font-weight:700;
+    margin-bottom:15px;
+    color:#666
+}
+.set-box h4 {
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:5px;
+    color:#666
+}
+
+.set-box .item-list {
+    padding:0px 0px 0px 0px;
+}
+.set-box .form-item {
+   margin-bottom:15px;
+}
+.set-box .form-item:last-child {
+    margin-bottom:0px;
+    padding-bottom:0px;
+}
+.selcls {
+    width:100%;
+     padding:4px;
+}
+.item-ipt .form-item {
+       margin-bottom:15px;
+}
+.item-ipt {
+    padding-bottom:20px;
+}
+
+/*.dialog-settings {
+        transform: scale(.6);
+    -webkit-transform: scale(.6);
+    transition: -webkit-transform 0.3s cubic-bezier(.4, .83, .32, 1.33);
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(.4, .83, .32, 1.33);
+}*/
+.dialog-show {
+     -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-name: scaleOpen;
+    animation-name: scaleOpen;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 1;
+}
+
+@-webkit-keyframes scaleOpen {
+	from {opacity:0;
+		-webkit-transform:scale3d(.6,.6,.6) translate3d(0,0,0);
+		transform:scale3d(.6,.6,.6) translate3d(0,0,0);
+	}
+	60% {opacity: 1;}
+	to {}
+}
+@keyframes scaleOpen {
+	from {opacity:0;
+		-webkit-transform:scale3d(.6,.6,.6) translate3d(0,0,0);
+		transform:scale3d(.6,.6,.6) translate3d(0,0,0);
+	}
+	60% {opacity: 1;}
+	to {}
+}

@@ -1,0 +1,12 @@
+﻿/*common*/
+.cf:before, .cf:after{content: "";display: table;}
+.cf:after{clear: both;}
+.cf{zoom: 1;}
+.clear{height: 0px;line-height: 0px;clear: both;font-size: 1px;}
+.ctl, .fl, .fc, .cnl{float: left;}
+.ctr, .fr, .cnr{float: right;}
+.ts{-moz-transition: all 0.3s ease;-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;-ms-transition: all 0.3s ease;transition: all 0.3s ease;}
+.dl{display: inline-block;*display: inline;*zoom: 1;}
+.v-show,.show { display:block!important;}
+.v-hide,.hide { display:none!important;}
+.s-select {color:#999;font-weight:normal}

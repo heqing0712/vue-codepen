@@ -1,0 +1,492 @@
+﻿
+/*page-wrap*/
+.page-wrap{
+    flex-grow:1;
+    position:relative;
+    overflow:hidden;
+    border-top:none;
+}
+
+/*bg-mask*/
+.bg-mask {
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    z-index:32;
+    display:none;
+}
+
+/*view-box*/
+.view-box{
+    width:210px;
+    background:#fff;
+    position:absolute;
+    top:60px;
+    right:0px;
+    border:1px solid #ddd;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .16);
+    z-index: 130;
+    -webkit-transform: scale(0);
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(.4, .83, .32, 1.33);
+    -webkit-transform-origin: right top;
+    border: 1px solid rgba(0, 0, 0, .25);
+}
+.view-box.active {
+    -webkit-transform: scale(1);
+    opacity: 1;
+}
+.view-box .view-wrap{
+    padding:15px 0px 15px 15px;
+  
+}
+
+.view-list {
+    flex-wrap:wrap;
+}
+.s-view {
+    margin:0px 0px 0px 0px;
+    padding:10px;
+    cursor:pointer
+}
+
+.s-view  .iboxs{
+    width:40px;
+    height:40px;
+
+}
+.s-view .ibox {
+        flex-grow:1;
+}
+.view-list,.s-rows ,.s-cols,.s-code,.iboxs{
+     display:flex;
+    display:-webkit-flex;
+}
+
+.s-view .s-rows {
+    flex-direction:column;
+}
+
+
+.s-view .s-result,.s-view .s-code,.s-view .s-menu {
+    background: #d7d9da;
+   
+}
+.s-view:hover .i-ac,.s-view.selected .i-ac{
+    
+       background:#bbb;
+}
+
+.s-view .s-cols>.ibox {
+    margin-right:6%;
+}
+
+.s-view .s-cols>.ibox:last-child {
+    margin-right:0
+}
+.s-view .s-rows>.ibox {
+    margin-bottom:6%;
+}
+
+.s-view .s-rows>.ibox:last-child {
+    margin-bottom:0
+}
+
+.s-view:hover {
+     /*border:1px solid #aaa;*/
+}
+
+.s-view3 .s-menu {
+    height:3px;
+    flex-grow:0;
+    margin-bottom:4%!important;
+}
+
+.s-view4 .s-menu {
+    height:3px;
+    flex-grow:0;
+    margin-bottom:4%!important;
+}
+.s-view4 .s-rows {
+    margin-bottom:5%!important;
+}
+.s-view5 .s-menu {
+    height:3px;
+    flex-grow:0;
+    margin-bottom:9%!important;
+}
+.s-view6 .s-menu {
+    height:3px;
+    flex-grow:0;
+    margin-bottom:9%!important;
+}
+.s-view7 .s-code {
+    margin-bottom:9%!important;
+}
+.s-view7 .s-code:last-child {
+    margin-bottom:0!important;
+}
+.s-view8 .s-code {
+    margin-bottom:9%!important;
+}
+.s-view8 .s-code:last-child {
+    margin-bottom:0!important;
+}
+
+/*web-editor*/
+.web-editor {
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+}
+
+/*boxes*/
+.boxes {
+
+    display:flex;
+    display:-webkit-flex;
+
+    /*排序方式 行*/
+    flex-direction:row;
+
+    /*主轴对齐方式 做对齐*/
+    justify-content:flex-start;
+
+    /*纵轴对齐方式 伸缩 未设置高度或高度为auto 自动填满高度*/
+    align-items:stretch;
+    /*width:100%;
+    height:100%;*/
+
+}
+
+.boxes .box {
+   position:relative;
+ 
+}
+
+.boxes .resizer {
+    position:absolute;
+    background:rgba(0,0,0,0.2);
+}
+
+.boxes .box-menu{
+    height: 36px;
+    line-height: 36px;
+    font-size: 20px;
+    text-indent: 10px;
+    cursor: pointer;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-weight:bold;
+}
+.box-title {
+    display:inline-block;
+    font-size: 20px;
+    vertical-align:middle;
+    line-height:1;
+  
+}
+.editor-actions {
+    font-size:0px;
+    line-height:34px;
+}
+.editor-actions button {
+    background: #999;
+}
+
+.editor-actions .setting-nub {
+    line-height:1;
+    margin:0;
+    padding:2px 4px;
+    font-size:0px;
+    vertical-align:middle;
+ 
+}
+
+
+.editor-actions svg{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    pointer-events: none;
+    vertical-align: bottom;
+    fill: white;
+    font-size:0.8rem;
+    
+}
+
+/*boxes-col*/
+.boxes-col  {
+    /*排序方式 行*/
+    flex-direction:row;
+}
+
+.boxes-col > .box >.resizer {
+    width: 20px;
+    height: 100%;
+    border: none;
+    cursor: col-resize;
+    border: 0;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 25;  
+    background: white;
+    box-shadow: 0 -1px 1px rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.12);
+}
+
+
+.boxes-col-2 > .box {
+    width:50%;
+}
+
+.boxes-col .box-menu {
+    width:100%;
+}
+
+.boxes-col > .box-col {
+    flex-direction:column;
+}
+
+.boxes-col > .box-col >.vs-editor {
+    flex-grow:1;
+}
+
+
+/*boxes-row*/
+.boxes-row  {
+    /*排序方式 列*/
+    flex-direction:column;
+}
+
+.boxes-row >.box > .resizer {
+    width:100%;
+    height:20px;
+    bottom:0px;
+    left:0px;
+    cursor:row-resize;
+    z-index:25;
+}
+.boxes-row-2 >.box > .resizer-bt {
+    /*bottom:-24px;*/
+}
+
+.boxes-row-2 > .box-row {
+    height:50%;
+}
+.boxes-row-3>.box-row {
+    height:33.33%;
+    display:flex;
+    display:-webkit-flex;
+    flex-direction:column;
+}
+.boxes-col-2 > .box-col {
+   width:50%;
+}
+.boxes-col-3>.box-col {
+    width:33.33%;
+}
+
+.box-result .box-menu,
+.web-editor .resizer-line {
+    display:none;
+}
+
+
+
+
+
+/*.web-editor tab*/
+.web-editor .tab {
+    width:100%;
+    height:100%;
+    display:flex;
+    display:-webkit-flex;
+    flex-direction:column;
+    position:relative;
+ 
+}
+
+/*tab-menus*/
+.web-editor .tab-menus {
+    width:100%;
+    height:35px;
+   
+}
+.web-editor .tab-menu {
+    width:120px;
+    float:left;
+    line-height:35px;
+    font-size:20px;
+    text-indent:10px;
+    cursor:pointer;
+    text-align:center;
+    font-weight:bold;
+}
+
+
+/*tab-cts*/
+.web-editor .tab-cts {
+    overflow:hidden;
+    position:relative;
+    flex:1;
+}
+.web-editor .tab-ct {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0px;
+}
+.web-editor .tab-ct.active {
+    display:block;
+    z-index:3;
+}
+.web-editor > .boxes {
+    height:100%;
+}
+
+
+
+/*vs-editor*/
+.vs-editor {
+    height:100%;
+    font: 16px/1.75 "Droid Sans Mono","Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+}
+.vs-editor > .inner {
+    height:100%;
+}
+/*box-result*/
+.box-result {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    display:-webkit-flex;
+    background:#fff;
+    /*排序方式 */
+    flex-direction:column;
+}
+.box-result .drag-cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display:none;
+ }
+
+.result-container {
+    width:100%;
+    height:100%;
+    padding-right:10px;
+    position:relative;
+}
+
+.result-container .run-iframe{
+    border: 0;
+    background: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+ }
+
+
+.boxes-col > .box {
+    flex-grow:1;
+    height:100%;
+}
+
+/*web-editor1*/
+.web-editor1 > .boxes-row {
+    height:100%;
+
+}
+.web-editor1 .boxes-col > .box {
+    display:flex;
+    display:-webkit-flex;
+    flex-grow:1;
+}
+
+.web-editor1 > .boxes-row >.box-code{
+    display:flex;
+    display:-webkit-flex;
+    flex-direction:column;
+}
+.web-editor1 > .boxes-row > .box-code>.boxes-col{
+    /*height:auto;*/
+    flex:1;
+}
+.web-editor1 > .boxes-row .resizer-bt{
+   position:static;
+ 
+}
+
+
+/*web-editor2*/
+.web-editor2 .boxes-col > .box {
+    display:flex;
+    display:-webkit-flex;
+    flex-grow:1;
+}
+
+.web-editor2 .result-container {
+    padding:24px 0px 0px 0px;
+}
+
+.web-editor2  .box-result {
+    position:relative;
+    z-index:10;
+}
+
+/*web-editor7 web-editor8**/
+.web-editor7 .vs-editor ,
+.web-editor8 .vs-editor{
+    flex:1;
+    height:auto;
+}
+.web-editor5 .resizer-col,
+.web-editor7 .resizer-col,
+.web-editor8 .resizer-col {
+    width:17px!important;
+}
+.web-editor7 .boxes-row-3 ,
+.web-editor8 .boxes-row-3{
+    height:100%;
+}
+
+.web-editor7 .boxes-row .box-menu,
+.web-editor8 .boxes-row .box-menu  {
+    cursor: row-resize;
+}
+
+.web-editor7 .box-row > .box-menu ,
+.web-editor7 .box-row .resizer,
+.web-editor8 .box-row .resizer{
+    z-index:22;
+    height:36px;
+    position:static;
+}
+
+
+.web-editor7 .boxes-row .box:first-child>.box-menu,
+.web-editor8 .boxes-row .box:first-child>.box-menu{
+    cursor:default;
+    z-index: 22;
+    position:relative;
+    
+}
+
+.tab-menus .editor-actions {
+    float:right;
+    margin-right:15px;
+}
+

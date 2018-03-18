@@ -1,0 +1,64 @@
+﻿
+
+/*footer*/
+.footer {
+    background:#fff;
+    border-top:1px solid #ddd ;
+    height:40px;
+    z-index:3;
+    color:#555;
+}
+.footer .wrap {
+    padding:0 15px;
+    line-height:38px;
+    font-size: 13px;
+    color: #333;
+}
+
+.footer dl {
+    float:left;
+    margin-right:50px;
+}
+.footer dt, .footer dd {
+    display:inline-block;
+}
+.footer dt {
+    padding:0px 2px 0px 0px;
+}
+
+.footer .tags {
+    display:inline-block;
+}
+.footer .tag {
+    background: #eceff5;
+    color: #a1a8af;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 0 8px;
+    border-radius:3px;
+    display: inline-block;
+    margin-right:5px;
+}
+.footer .add {
+    display:inline-block;
+    text-decoration:none;
+    line-height: 22px;
+    border-radius:3px;
+    font-size:20px;
+    vertical-align:-2px;
+    color:#999;
+    outline:none;
+}
+
+.footer .add:hover {
+    /*background:#379BE9;
+    color:#fff;*/
+    color:#000;
+}
+.footer .version{
+    line-height:40px;
+    text-align:right;
+    padding-right:20px;
+    float:right
+}

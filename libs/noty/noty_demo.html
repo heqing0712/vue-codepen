@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+  
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery.noty.js"></script>
+    <script src="themes/VsTheme.js"></script>
+    <style type="text/css">
+        .cn {
+            margin-bottom:10px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <div class="cn">
+        <button>提交</button>
+    </div>
+    <div class="cn">
+        <button id="tip1">提示1</button>
+    </div>
+
+    <script type="text/javascript">
+
+        if ($.noty) {
+
+
+            $.extend(true, $.noty.defaults, {
+                type: "alert",
+                timeout: 60000,
+                custom: $(window.top.document).find('body'),
+                layout: "topCenter",
+                maxVisible: 5,
+                animation: {
+                    open: {
+                        height: "toggle"
+                    },
+                    close: {
+                        height: "toggle"
+                    },
+                    easing: "swing",
+                    speed: 200
+                }
+            })
+        }
+        var pageReload = function () {
+            $.noty.closeAll();
+            window.location.reload();
+        };
+        var notyTip = noty({
+            text: "提交成功！<a href='javascript:pageReload();'>[新建]</a>",
+            type: "success"
+        });
+
+
+        $("#tip1").bind("click", function () {
+            var nt = noty({
+                text: "正在保存中...",
+                type: "information",
+                timeout: 100000
+            });
+
+            setTimeout(function () {
+
+                nt.close();
+            },1000);
+
+        })
+        
+
+    </script>
+</body>
+</html>

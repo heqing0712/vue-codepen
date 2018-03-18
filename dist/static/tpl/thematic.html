@@ -1,0 +1,183 @@
+﻿<template  id="brick-html-tpl">
+<div class="{{brickCls}}">
+        {{ if saleCls}}
+        <div class="{{saleCls}}">
+            <p class="s-txt">{{saleTxt}}</p>
+            <p class="s-num">{{saleNum}}</p>
+        </div>
+        {{/if}}
+        <a href="#">
+            <div class="img">
+                <img src="{{src}}" />
+            </div>
+            <div class="info">
+                <div class="title">
+                    <h2 class="h2">{{@h2}}</h2>
+                    <h3 class="h3">{{@h3}}</h3>
+                    <h4 class="h4">{{@h4}}</h4>
+                    <div class="tags">{{@tags}}</div>
+                </div>
+                <div class="bt">
+                    <p class="price">
+                        <span class="txt">{{@txt}}</span>
+                        <span class="rmb">￥</span>
+                        <span class="num">{{@num}}</span>
+                        <span class="old">{{@old}}</span>
+                    </p>
+                    <p class="btn">{{@btn}}</p>
+                </div>
+            </div>
+        </a>
+
+    </div>
+</template>
+
+<template id="brick-css-tpl">
+.brick{font: 13px/1.75 Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei" ;position:relative;width:240px;height:400px;line-height:1.2;background:#fff;}
+.brick *{padding:0;margin:0;font-style:normal;font-weight:normal;}
+.brick ,.brick .price, .brick .btn{display:inline-block;}
+.brick strong{font-weight:700}
+.brick .img{height:100%;overflow:hidden;}
+.brick .info{position:absolute;left:0px;right:0px;bottom:0px;}
+.brick .title{font-size:20px;}
+.brick .title *{text-overflow: ellipsis;-o-text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.brick .bt:after{content: "";display: table;clear: both;}
+.brick .price{line-height:1;}
+</template>
+
+<template id="zt-css-tpl">
+/*reset*/
+body {height:100%;  color:#333;}
+div, html, body, p, ul, ol, li, a, form, img, table, td, h1, h2, h3, h4, h5, h6, blockquote, header, section, footer, aside, nav, article, figure, figcaption, dl, dt, dd {margin:0;padding:0;}
+header, section, footer, aside, nav, article, figure, figcaption {display: block;}
+table {border-collapse:collapse;}
+img {border:none; vertical-align: middle;}
+ul, li {list-style:none;}
+input:focus, textarea:focus {outline:none;}
+
+
+/*common*/
+.cf:before,.cf:after{content:"";display:table;}
+.cf:after{clear:both;}
+.cf{zoom:1;}
+.ctl,.fl,.fc,.cnl{float:left;}
+.ctr,.fr,.cnr{float:right;}
+.ts{-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-ms-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;}
+.pa{position:absolute}
+.ps{position:relative;}
+.di{display:inline-block;*display:inline;*zoom:1;}
+.mb0{margin-bottom:0px!important;}
+.zt-mask{width: 100%;height: 100%;position: absolute !important;top: 0;left: 0;z-index:101;background-repeat: no-repeat;background-position: center center;background-color: rgba(255,255,255,.8);background-image: url("http://newimg.flnet.com:80/Pic/201601/50zueb8392f8fc0f8645c1a476494f60a2b850.png") ;}
+.bg,.ps-wrap{position:absolute;left:0px;top:0px;width:100%; height:100%;z-index:0;}
+
+/*flex*/
+.flex{display: flex;display: -webkit-flex;}
+.flex .fone {flex:1;word-wrap: break-word;word-break: break-all;}
+
+/*btn*/
+.btn{display:inline-block;position:relative;background-size:contain;background-repeat:no-repeat;}
+
+
+/*ui-icon sale gift*/
+.ui-icon,.sale,.gift{display:inline-block;background-size:contain;background-repeat:no-repeat;}
+
+/*background img*/
+.imgcenter img,.bg img{width:1920px;margin-left:-961px;left:50%;position:relative;display:block;}
+.imgcenter ,.bg {overflow:hidden}
+
+
+/*zt-container*/
+.zt-container{
+width:100%;
+position:relative;
+font: 13px/1.75 Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+}
+.zt-container a{text-decoration:none;}
+
+
+/*floor*/
+.floor{position:relative;}
+.floor .h1 {text-align:center;}
+.floor .wrap{margin:0 auto;position:relative;z-index:1;width:990px;}
+.floor .main{padding:0px 0px 0px 0px;position:relative;}
+
+</template>
+
+<template  id="floor-html-tpl">
+    <div class="floor {{name}}">
+        <div class="wrap">
+            <div class="bricks">
+                {{bricks}}
+            </div>
+        </div>
+    </div>
+</template>
+
+<template id="floorZt-html-tpl">
+<div class="zt-container">
+    {{floors}}
+</div>
+</template>
+
+<template id="zt-html-tpl">
+ <div class="zt-container">
+        {{if banner && banner.bgs.length }}
+        <div class="zt-banner">
+            <div class="imgcenter">
+                {{each banner.bgs src i}}
+                <div><img src="{{src}}" /></div>
+                {{/each}}
+            </div>
+             
+        </div>
+        {{/if}}
+
+        {{if floors && floors.length}}
+        {{each floors floor i}}
+        <div class="{{floor.className}}">
+            {{if floor.bgs.length}}
+            <div class="bg">
+                {{each floor.bgs src i}}
+                <div><img src="{{src}}" /></div>
+                {{/each}}
+            </div>
+            {{/if}}
+            {{if floor.hasTitle}}
+            <h1 class="h1">
+                {{if floor.titleElem.src}}
+                <img src="{{floor.titleElem.src}}" />
+                {{/if}}
+            </h1>
+            {{/if}}
+
+            <div class="wrap">
+
+                <div class="main">
+                    {{if floor.bricks && floor.bricks.length}}
+                    <div class="bricks">
+                        {{@floor.bricksHtml}}
+                    </div>
+                    {{/if}}
+
+                    {{if floor.ads && floor.ads.children}}
+                    <div class="zt-link">
+                        {{each floor.ads.children img }}
+                        <a href="#" target="_blank">
+                            <img src="{{img.src}}" class="ts">
+                        </a>
+                        {{/each}}
+                    </div>
+
+                    {{/if}}
+
+                </div>
+
+            </div>
+        </div>
+
+        {{/each}}
+
+        {{/if}}
+
+    </div>
+</template>

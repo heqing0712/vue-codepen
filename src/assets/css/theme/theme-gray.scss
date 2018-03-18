@@ -1,0 +1,177 @@
+﻿/*
+    theme-gray
+*/
+
+/*header*/
+.theme-gray .header {
+    background:#fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.theme-gray .header .btn,
+.theme-gray .webuploader-container > span,
+.theme-gray .webuploader-pick{
+    border: 3px solid #ccc;
+    background:#fff;
+    color:#555;
+}
+
+
+.theme-gray .header .btn:hover,
+.theme-gray .webuploader-container > span:hover,
+.theme-gray .webuploader-pick-hover{
+    background:#eee;  
+}
+
+
+/*content*/
+.theme-gray .web-editor {
+       color: #555;
+}
+.theme-gray .web-editor .box-menu,
+.theme-gray .web-editor .tab-menus {
+    background: $gray;
+}
+
+.theme-gray .web-editor .tab-menus {
+    border-bottom: 1px solid #ddd;
+}
+.theme-gray .boxes-col .box-menu {
+    border-bottom: 1px solid rgba(0,0,0,0.075);
+}
+.theme-gray .boxes-col > .box >.resizer{      
+   background: white;
+   box-shadow: 0 -1px 1px rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.12);
+}
+.theme-gray  .boxes-row-2 > .box > .resizer {
+    background: #fff;
+    border: 0;
+    border-top:1px #ddd solid;
+    border-bottom:1px #ddd solid;
+    background:#fff;
+    /*background: #fff url(../../images/sidebar-divider-dots2.png) no-repeat center ;*/
+
+} 
+.theme-gray .web-editor .tab-menu:hover {
+  background:#d7d6d6;
+}
+.theme-gray .web-editor .tab-menu.active ,
+.theme-gray .web-editor .tab-menu.active:hover{
+    color:#444;
+    background:#FFF29D;   
+}
+
+.theme-gray .web-editor7 .boxes-row .box-menu,
+.theme-gray .web-editor8 .boxes-row .box-menu {
+    color: #555;
+    background:none;
+    border-bottom: 1px solid rgba(0,0,0,0.075);
+    border-top: 1px solid rgba(0,0,0,0.075);
+}
+
+.theme-gray .web-editor7 .boxes-row .resizer,
+.theme-gray .web-editor8 .boxes-row .resizer {
+    background: $gray;
+    box-shadow: none;
+}
+
+.theme-gray .web-editor7 .boxes-row .box:first-child > .box-menu,
+.theme-gray .web-editor8 .boxes-row .box:first-child > .box-menu {
+    background: $gray;
+}
+
+
+/*other*/
+.theme-gray .monaco-editor .line-numbers {
+    color:#999!important;
+}
+
+
+/*dialog*/
+.theme-gray .ui_border {
+    border-radius: 0px;
+    border: 1px solid #aaa;
+    -webkit-box-shadow: 0px 3px 24px rgba(0,0,0,.28);
+    box-shadow: 0px 3px 24px rgba(0,0,0,.28);
+}
+
+.theme-gray .ui_title,
+.theme-gray .ui_lt,
+.theme-gray .ui_rt,
+.theme-gray .ui_l,
+.theme-gray .ui_r,
+.theme-gray .ui_lb,
+.theme-gray .ui_b,
+.theme-gray .ui_t,
+.theme-gray .ui_rb,
+.theme-gray .ui_state_drag .ui_title,
+.theme-gray .ui_res_t {
+    background:#fff;
+    border-radius:0px;
+}
+.theme-gray .ui_title_buttons >a {
+    border-radius: 0px;
+}
+.theme-gray .ui_buttons input {
+    border-radius: 0;
+    padding: 3px 25px 3px 25px;
+    border-top: solid 1px #ddd;
+}
+
+.theme-gray .ui_min_b {
+    top: 8px;
+    left: 4px;
+    width: 12px;
+    height: 2px;
+    border-bottom: 2px solid #fff;
+}
+
+
+.theme-gray .ui_min,
+.theme-gray .ui_max,
+.theme-gray .ui_close,
+.theme-gray .ui_res{
+    margin-left:10px;
+    color:#888;
+    font-size:20px;
+    width:20px;
+    height:20px;
+    line-height:18px;
+    border-radius:2px;
+}
+.theme-gray .ui_min_b{ 
+    top:10px;left:4px;width:12px;height:2px;
+    border-bottom:2px solid #888;
+}
+.theme-gray .ui_max_b{ top:5px;left:4px;width:10px;height:7px; }
+.theme-gray .ui_res_t,
+.theme-gray .ui_res_b{ top:8px;left:2px;width:10px;height:8px; }
+.theme-gray .ui_res_b{ top:4px;left:6px; }
+.theme-gray .ui_res_t,
+.theme-gray .ui_res_b,
+.theme-gray .ui_max_b{ border:1px solid #888;border-top-width:3px; }
+.theme-gray .ui_res_t{ background:#FFF; }
+.theme-gray .ui_close{ vertical-align:baseline;_line-height:22px;margin-left:0; }
+.theme-gray .ui_close:focus {
+    color:#888;background:none;outline:0 none;}
+.theme-gray .ui_close:hover { 
+    color:#FFF!important;outline:0 none;background:#c72327; 
+}
+.theme-gray .ui_close{
+    font-family: tahoma,arial,\5b8b\4f53,sans-serif;
+}
+.theme-gray .ui_close,.theme-gray  .ui_close:link{
+      color:#888;
+}
+.theme-gray .ui_title{
+    color:#555
+}
+.theme-gray .ui_buttons {
+    background-color: #fff;
+    border-top:none;
+}
+.theme-gray .ui_max_b {
+    top: 5px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+}

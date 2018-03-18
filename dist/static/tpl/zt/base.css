@@ -1,0 +1,82 @@
+﻿
+/*reset*/
+body {height:100%;  color:#333;}
+div, html, body, p, ul, ol, li, a, form, img, table, td, h1, h2, h3, h4, h5, h6, blockquote, header, section, footer, aside, nav, article, figure, figcaption, dl, dt, dd {margin:0;padding:0;} 
+header, section, footer, aside, nav, article, figure, figcaption {display: block;}
+table {border-collapse:collapse;}
+img {border:none; vertical-align: middle;}
+ul, li {list-style:none;}
+input:focus, textarea:focus {outline:none;}
+
+
+/*common*/
+.cf:before,.cf:after{content:"";display:table;}
+.cf:after{clear:both;}
+.cf{zoom:1;}
+.ctl,.fl,.fc,.cnl{float:left;}
+.ctr,.fr,.cnr{float:right;}
+.ts{-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-ms-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;}
+.pa{position:absolute}
+.ps{position:relative;}
+.di{display:inline-block;*display:inline;*zoom:1;}
+.mb0{margin-bottom:0px!important;}
+.zt-mask{width: 100%;height: 100%;position: absolute !important;top: 0;left: 0;z-index:101;background-repeat: no-repeat;background-position: center center;background-color: rgba(255,255,255,.8);background-image: url("http://newimg.flnet.com:80/Pic/201601/50zueb8392f8fc0f8645c1a476494f60a2b850.png") ;}
+.bg,.ps-wrap{position:absolute;left:0px;top:0px;width:100%; height:100%;z-index:0;}
+
+/*flex*/
+.flex{display: flex;display: -webkit-flex;}
+.flex .fone {flex:1;word-wrap: break-word;word-break: break-all;}
+
+/*btn*/
+.btn{display:inline-block;position:relative;background-size:contain;background-repeat:no-repeat;}
+
+
+/*ui-icon sale gift*/
+.ui-icon,.sale,.gift{display:inline-block;background-size:contain;background-repeat:no-repeat;}
+
+/*background img*/
+.imgcenter img,.bg img{width:1920px;margin-left:-961px;left:50%;position:relative;display:block;}
+.imgcenter ,.bg {overflow:hidden}
+
+
+/*zt-container*/
+.zt-container{
+   width:100%;
+   position:relative;
+   font: 13px/1.75 Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+}
+.zt-container a{text-decoration:none;}
+
+
+/*floor*/
+.floor{position:relative;}
+.floor .h1 {text-align:center;}
+.floor .wrap{margin:0 auto;position:relative;z-index:1;width:990px;}
+.floor .main{padding:0px 0px 0px 0px;position:relative;}
+
+
+
+/*zt-link*/
+.zt-link{padding:50px 0px 0px 0px;}
+.zt-link a{display:block;width:990px;height:100px;margin:0 auto;margin-bottom:20px;}
+.zt-link a:last-child{ margin-bottom:0}
+.zt-link a img{position:relative;top:0}
+.zt-link a:hover img{top:-3px;box-shadow:0px 6px 24px rgba(0,0,0,0.12);}
+
+/*bricks*/
+.bricks {font-size: 0px; text-align: justify; text-justify: distribute-all-lines;}
+.bricks:after{content: ""; width: 100%; display: inline-block;}
+.bricks .brick {display:inline-block;*display:inline; /*ie7 hack*/  *zoom:1;/*make inline element has width and height by trigger ie hasLayout */   position:relative; margin-bottom:10px; vertical-align: top;}
+.bricks .brick a {display: block;}
+
+/*brick*/
+.brick{font: 13px/1.75 Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei" ; position:relative; width:240px; height:400px; line-height:1.2; background:#fff;}
+.brick *{padding:0; margin:0; font-style:normal; font-weight:normal;}
+.brick ,.brick .price, .brick .btn{display:inline-block;}
+.brick strong{font-weight:700}
+.brick .img{height:100%;overflow:hidden;}
+.brick .info{position:absolute; left:0px; right:0px; bottom:0px;}
+.brick .title{font-size:20px;}
+.brick .title *{text-overflow: ellipsis; -o-text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.brick .bt:after{content: ""; display: table; clear: both;}
+.brick .price{line-height:1;}

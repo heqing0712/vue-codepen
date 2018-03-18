@@ -1,0 +1,29 @@
+/*vseditor overflow css*/
+.context-view {
+    z-index: 100!important;
+}
+.monaco-editor.vs .current-line,
+.monaco-editor .view-overlays .current-line {
+    border:none!important;
+}
+
+.monaco-editor{
+     -webkit-tap-highlight-color: transparent;
+    font-variant-ligatures: contextual;
+}
+
+.monaco-editor{
+    padding:0px 0px 0px 0px;
+}
+.resizing .monaco-editor .minimap-shadow-visible {
+    display:none;
+}
+.monaco-editor .overflow-guard>.margin,
+.monaco-editor .lines-content
+{
+    margin-top:5px;
+}
+
+.monaco-editor .line-numbers {
+    color:#999!important;
+}

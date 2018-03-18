@@ -1,0 +1,174 @@
+﻿/*
+  theme-blue
+*/
+
+/*header*/
+.theme-blue .header {
+  height:60px;
+  color:#000;
+  background:#D6DBE9
+}
+.theme-blue .header .btn
+{
+    color:#555;
+    font-size:16px;
+}
+.theme-blue .webuploader-container > span,
+.theme-blue .webuploader-pick{
+        color:#fff;
+    background:#1593FF;
+}
+
+.theme-blue .header .btn:hover{
+  background:#afb7d0;
+  border-radius:3px;
+  box-shadow:inset 0px 1px 3px rgba(0,0,0,0.16);  
+  color:#fff
+}
+
+.theme-blue .webuploader-container > span:hover ,
+.theme-blue .webuploader-pick-hover {
+      background:#1586e8;
+}
+.theme-blue .s-view:hover .i-ac,
+.theme-blue .s-view.selected .i-ac{
+    background:#4a6588;
+}
+
+/*content*/
+.theme-blue .web-editor {
+   background:#fff;
+}
+
+.theme-blue .web-editor .box-menu{
+    font-size: 18px;
+    height: 32px;
+    line-height: 32px;
+    font-weight:bold;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.18);
+}
+
+.theme-blue .web-editor .tab-menus {
+    height:32px;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.16);
+    z-index:32;
+}
+.theme-blue .boxes-col .box-menu {
+    border-bottom: 1px solid rgba(0,0,0,0.075);
+}
+.theme-blue .web-editor .tab-menu {
+    line-height:32px;
+    font-size:20px;
+}
+.theme-blue .web-editor .tab-menu:hover {
+    background:#5B7199;
+}
+.theme-blue .web-editor .tab-menu.active ,
+.theme-blue .web-editor .tab-menu.active:hover{
+    color:#444;
+    background:#FFF29D;
+    height:32px;
+
+}
+
+.theme-blue .boxes-col > .box >.resizer{
+    background:#39506F;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.24);
+    border-left: 1px solid rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+.theme-blue .boxes-row > .box >.resizer{
+
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.24);
+}
+
+.theme-blue .web-editor7 .boxes-row .box-menu,
+.theme-blue .web-editor8 .boxes-row .box-menu {
+    font-size: 18px;
+    height: 32px;
+    line-height: 32px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.12);
+}
+
+.theme-blue .web-editor7 .boxes-row .resizer,
+.theme-blue .web-editor8 .boxes-row .resizer {
+    height:32px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.12);
+}
+
+.theme-blue .box-result .box-menu {
+   display:block;
+}
+.theme-blue .footer {
+    height: 57px;
+    background: #fff;
+    border-top: 17px solid $blue;
+}
+.theme-blue .editor-actions {
+    line-height:32px;
+}
+.theme-blue .setting-nub {
+    background: #465f81;
+    color: white;
+}
+
+.theme-blue .setting-nub:hover {
+    background: #4f688a;
+}
+
+
+/*bgcolor and color*/
+.theme-blue .web-editor .box-menu ,
+.theme-blue .web-editor .tab-menus ,
+.theme-blue .boxes-row > .box >.resizer,
+.theme-blue .web-editor7 .boxes-row .box-menu,
+.theme-blue .web-editor8 .boxes-row .box-menu,
+.theme-blue .web-editor7 .boxes-row .resizer,
+.theme-blue .web-editor8 .boxes-row .resizer{
+    background : $blue;
+    color : #fff;
+}
+
+/*dialog*/
+.theme-blue .ui_border {
+    border-radius: 0px;
+    border: 1px solid #0D202D;
+    -webkit-box-shadow: 0px 3px 24px rgba(0,0,0,.28);
+    box-shadow: 0px 3px 24px rgba(0,0,0,.28);
+}
+
+.theme-blue .ui_title,
+.theme-blue .ui_lt,
+.theme-blue .ui_rt,
+.theme-blue .ui_l,
+.theme-blue .ui_r,
+.theme-blue .ui_lb,
+.theme-blue .ui_b,
+.theme-blue .ui_t,
+.theme-blue .ui_rb,
+.theme-blue .ui_state_drag .ui_title,
+.theme-blue .ui_res_t {
+  
+    background: #39506F;
+    border-radius:0px;
+}
+.theme-blue .ui_title_buttons >a {
+    border-radius: 0px;
+}
+.theme-blue .ui_buttons input{
+    background:#007bff;
+    border-radius:0;
+    padding: 3px 25px 3px 25px;
+    border-top: solid 1px #ddd;
+}
+.theme-blue .ui_buttons {
+    background-color: #fff;
+    border-top:none;
+}
+.theme-blue .ui_min,
+.theme-blue  .ui_max,
+.theme-blue  .ui_close,
+.theme-blue  .ui_res{
+    margin-left:10px;
+
+}
