@@ -53,7 +53,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     // https://github.com/kangax/html-minifier#options-quick-reference
     new HtmlWebpackPlugin({
       filename: config.build.index,
-      template: 'index.html',
+      template: 'src/app.html',
       inject: true,
       minify: {
         removeComments: true,
