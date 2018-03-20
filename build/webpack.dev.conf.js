@@ -19,7 +19,7 @@ var plugins = [
 
     new HtmlWebpackPlugin({
         filename: 'index.html',
-        template: 'index.html',
+        template: 'src/app.html',
         inject: true
     }),
 

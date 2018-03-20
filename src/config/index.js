@@ -3,6 +3,8 @@ var config = {};
 var storeToken = "vs-";
 
 config.staticPath = "./static/";
+
+//为了发布到 github 可以预览打包的路径
 //config.staticPath = "./vue-codepen/dist/static/";
 
 config.storeToken = storeToken;

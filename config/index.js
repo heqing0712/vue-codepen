@@ -7,6 +7,7 @@ module.exports = {
     index: path.resolve(__dirname, '../index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
+    //为了发布大vue-codepen可以预览设置的目录
     assetsPublicPath: '/',
     productionSourceMap: true,
     // Gzip off by default as many popular static hosts such as
