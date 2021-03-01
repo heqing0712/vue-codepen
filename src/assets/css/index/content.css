@@ -422,11 +422,13 @@
     flex-direction:column;
 }
 .web-editor1 > .boxes-row > .box-code>.boxes-col{
-    /*height:auto;*/
-    flex:1;
+    flex-grow:1;
+    /* overflow:hidden; */
 }
+ 
 .web-editor1 > .boxes-row .resizer-bt{
    position:static;
+   flex-shrink:0;
  
 }
 
@@ -490,3 +492,7 @@
     margin-right:15px;
 }
 
+.resizing .vs-editor,
+.resizing .box-code>.boxes-col{
+    overflow: hidden;
+}

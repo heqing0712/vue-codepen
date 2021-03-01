@@ -91,7 +91,7 @@ function clearLayoutStore() {
 *重置编辑器布局
 */
 export function resetEditorLayout() {
-
+  
     let editors = vs.editors;
     for (let o in editors) {
         if (editors[o]) {
